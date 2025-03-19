@@ -1,3 +1,4 @@
+<!-- P<!-- Página principal con modificación en la sección de anfibios -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,42 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Desplegable de Animales</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('img.gif'); /* Imagen de loros */
+            background-image: url('img.gif');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             padding: 20px;
         }
-
         .menu {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
-            background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            background: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
             width: 90%;
             max-width: 600px;
             text-align: center;
         }
-
-        .dropdown {
-            position: relative;
-        }
-
+        .dropdown { position: relative; }
         .dropbtn {
             background-color: #4CAF50;
             color: white;
@@ -53,7 +44,6 @@
             width: 100%;
             max-width: 150px;
         }
-
         .dropdown-content {
             display: none;
             position: absolute;
@@ -64,7 +54,6 @@
             border-radius: 5px;
             overflow: hidden;
         }
-
         .dropdown-content a {
             color: black;
             padding: 10px;
@@ -72,53 +61,12 @@
             display: block;
             border-bottom: 1px solid #ddd;
         }
-
-        .dropdown-content a:last-child {
-            border-bottom: none;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropbtn:hover {
-            background-color: #45a049;
-        }
-
-        /* Media Queries para dispositivos móviles */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-                text-align: center;
-            }
-
-            .menu {
-                flex-direction: column;
-                gap: 10px;
-                width: 100%;
-                max-width: 90%;
-            }
-
-            .dropbtn {
-                width: 100%;
-                max-width: none;
-                font-size: 14px;
-                padding: 10px;
-            }
-
-            .dropdown-content {
-                position: relative;
-                width: 100%;
-            }
-        }
+        .dropdown-content a:hover { background-color: #ddd; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropbtn:hover { background-color: #45a049; }
     </style>
 </head>
 <body>
-
     <div class="menu">
         <div class="dropdown">
             <button class="dropbtn">Peces</button>
@@ -145,11 +93,7 @@
         <div class="dropdown">
             <button class="dropbtn">Anfibios</button>
             <div class="dropdown-content">
-                <a href="#">Rana</a>
-                <a href="#">Salamandra</a>
-                <a href="#">Sapo</a>
-                <a href="#">Tritón</a>
-                <a href="#">Axolote</a>
+                <a href="anfibios.html">Menú de Anfibios</a>
             </div>
         </div>
 
@@ -175,6 +119,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
